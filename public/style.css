@@ -1,0 +1,191 @@
+:root {
+    --bg-main: #141414;
+    --bg-header: #141414;
+    --bg-card: #222222;
+    --accent-color: #e50914;
+    --text-main: #ffffff;
+    --text-muted: #808080;
+    --border-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+#auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box {
+    background: #000;
+    padding: 40px;
+    width: 360px;
+    border-radius: 4px;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#main-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-header);
+    padding: 25px 60px;
+    border-bottom: 2px solid var(--accent-color); /* Фотодағы қызыл сызық */
+}
+
+header .logo {
+    color: var(--accent-color);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-buttons button:not(.logout-btn) {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.nav-buttons .logout-btn {
+    background-color: #555555;
+    color: #ffffff;
+    padding: 8px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.content {
+    padding: 40px 60px;
+}
+
+.sub-page h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.filters {
+    display: flex;
+    gap: 15px;
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.filters input[type="text"] {
+    flex: 3;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.filters select {
+    flex: 2;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.filters input[type="number"] {
+    width: 90px;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111111;
+}
+
+th {
+    padding: 15px 20px;
+    text-align: left;
+    color: var(--accent-color);
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    color: #fff;
+    vertical-align: middle;
+}
+
+img.thumb {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-del {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-del:hover {
+    background-color: var(--accent-color);
+}}
